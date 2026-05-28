@@ -1,4 +1,4 @@
-//OPERADORES ARITMÉTICOS
+//OPERADORES ARITMÉTICOS E ATRIBUIÇÃO
 
 var soma = 5 + 2 // (+) Operador de soma // resultado: 5 + 2 = 7
 var subtracao = 5 - 2 // (-) Operador de subtração // resultado: 5 - 2 = 3

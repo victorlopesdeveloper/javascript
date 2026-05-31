@@ -14,13 +14,41 @@
     </style>
 </head>
 <body>
-    <h1>Iniciando estudos com DOM</h1>
+    <h1>Iniciando estudos DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
-    <div>Clique em mim</div>
+    <div id="msg">Clique em mim</div>
 
     <script>
+        var corpo = document.body
+        /*
+        SELECIONANDO POR TAG NAME
+
+        var p1 = document.getElementsByTagName('p')[1]
+        */
         
+        /*
+        SELECIONANDO POR ID
+
+        var d = document.getElementById('msg')
+        d.style.background = "green"
+        d.innerText = 'Estou aguardando...'
+        */
+        /*
+        SELECIONANDO POR NAME
+
+        var d = document.getElementsByName('msg')[0]
+        d.innerText = 'Olá'
+        */
+       /*
+       SELECIONANDO POR NOME DE CLASSE
+
+       var d = document.getElementsByClassName('msg')
+       */
+        // SELECIONANDO POR QUERY SELECTOR
+
+        var d = document.querySelector('div#msg')
+        d.style.background = 'blue'
     </script>
 </body>
 </html>

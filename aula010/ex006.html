@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        #area{
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(50, 109, 50);
+            color: white;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <!--
+    Dessa maneira você chama as function's dentro da propria tag que você quer que tenha os eventos, porém isso deixa o codigo html 'sujo', a maneira mais recomendada é usar os addEventListener dentro do script, vou deixar esse comentario salvo, apenas por questão de conhecimento e caso alguem venha a esse codigo conferir irá saber que existe também essa maneira.
+    
+    
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Interaja...
+    </div>
+    -->  
+    <div id="area">
+        Interaja...
+    </div>  
+
+
+    <script>
+        // EVENTOS DOM
+
+        var area = document.querySelector("#area")
+        area.addEventListener('click' , clicar)
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseout', sair)
+        
+        function clicar(){
+            area.innerText = 'Clicou!'
+            area.style.background = 'red'
+        }
+        function entrar(){
+            area.innerText = 'Entrou!'
+        }
+        function sair(){
+            area.innerText = 'Saiu!'
+            area.style.background = 'green'
+        }
+
+    </script>
+</body>
+</html>

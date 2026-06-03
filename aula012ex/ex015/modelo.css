@@ -27,7 +27,10 @@ section{
     margin-bottom: 10px;
 }
 #res{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 footer p{
     color: white;

@@ -13,11 +13,14 @@ header h1{
     color: white;
 }
 section{
-    width: 50vw;
+    width: 40vw;
     background-color: white;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.274);
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 footer p{

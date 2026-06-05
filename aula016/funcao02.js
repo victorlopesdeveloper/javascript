@@ -1,0 +1,8 @@
+//FUNÇÃO QUE SOMA DOIS VALORES
+
+function soma(n1=0, n2=0){// PARAMETROS PRÉ DEFINIDOS, CASO NÃO SEJA PASSADO NENHUM VALOR PARA OS PARAMETROS ELE IRÁ CONSIDERAR QUE É 0
+    return n1 + n2
+}
+
+let resposta = soma(1,18)// 1 SE TORNA PARAMETRO DE n1 e 18 SE TORNA O PARAMETRO DE n2
+console.log(resposta)

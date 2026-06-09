@@ -16,7 +16,6 @@ header h1{
 main{
     width: 60vw;
     background-color: white;
-    height: 300px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.288);
     display: flex;
@@ -25,6 +24,11 @@ main{
     align-items: center;
 }
 #entrada{
+    display: flex;
+    flex-direction: column;
+    
+}
+#primeira-div{
     display: flex;
 }
 #entrada input#inum{
@@ -35,6 +39,15 @@ main{
     height: 26.5px;
     margin-top: 11.5px;
     
+}
+#saida{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#saida input{
+    margin-top: 10px;
 }
 footer p{
     color: white;
@@ -53,6 +66,11 @@ footer p{
         display: flex;
         flex-direction: column;
     }
+    #primeira-div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
     
     #iadicionar{
         width: 90%;
